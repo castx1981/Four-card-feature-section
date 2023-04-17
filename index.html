@@ -7,71 +7,61 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-      tailwind.config = {
-          theme: {
-              fontFamily: {
-                  'sans': ['Poppins', 'sans-serif'],
-              },
-              extend: {
-                  colors: {
-                      // primary
-                      'primary-red': 'hsl(0, 78%, 62%)',
-                      'primary-cyan': 'hsl(180, 62%, 55%)',
-                      'primary-orange': 'hsl(34, 97%, 64%)',
-                      'primary-blue': 'hsl(212, 86%, 64%)',
-                      // neutral
-                      'very-dark-blue': 'hsl(234, 12%, 34%)',
-                      'grayish-blue': 'hsl(229, 6%, 66%)',
-                      'very-light-gray': 'hsl(0, 0%, 98%)',
-                  },
-
-              }
-          },
-      }
-  </script>
+  <link href="style.css" rel="stylesheet">
   <title>Frontend Mentor | Four card feature section</title>
 </head>
 <body class="flex items-start justify-center min-h-screen bg-very-light-gray">
-<div class="w-[375px] px-8 py-[5.375rem] flex flex-col">
+<div class="w-[375px] px-8 py-[5.375rem] flex flex-col xl:w-[72rem] xl:px-0 xl:mx-auto">
   <!-- slogan area -->
-  <div class="text-center">
-    <h1 class="font-extralight text-2xl text-very-dark-blue">Reliable, efficient delivery</h1>
-    <h2 class="mt-1.5 font-semibold text-2xl text-very-dark-blue">Powered by Technology</h2>
-    <p class="mt-4 text-[15px] text-grayish-blue">
+  <div class="flex flex-col items-center">
+    <h1 class="font-extralight text-2xl text-very-dark-blue xl:text-4xl">
+      Reliable, efficient delivery
+    </h1>
+    <h2 class="mt-1.5 font-semibold text-2xl text-very-dark-blue xl:mt-2.5 xl:text-4xl">
+      Powered by Technology
+    </h2>
+    <p class="mt-4 text-[15px] leading-relaxed text-grayish-blue text-center xl:w-[32rem] xl:mt-6">
       Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
     </p>
   </div>
   <!-- widgets area -->
-  <div class="mt-20 space-y-6">
-    <div class="flex flex-col w-80 h-56 p-6 border-t-4 border-t-primary-cyan rounded-lg shadow-2xl">
-      <h1 class="flex-none font-semibold text-lg text-very-dark-blue">Supervisor</h1>
-      <p class="flex-1 mt-2 text-[13px] text-grayish-blue">
-        Monitors activity to identify project roadblocks
-      </p>
-      <img class="flex-none w-14 h-14 self-end" src="images/icon-supervisor.svg" alt=""/>
+  <div class="mt-[4.75rem] mx-auto flex flex-col space-y-6 xl:mt-16 xl:flex-row xl:space-y-0 xl:space-x-6">
+    <!-- col 1 -->
+    <div class="flex items-center">
+      <div class="flex flex-col w-full h-56 p-6 border-t-4 border-t-primary-cyan rounded-lg shadow-2xl xl:w-[21rem]">
+        <h1 class="flex-none font-semibold text-lg text-very-dark-blue">Supervisor</h1>
+        <p class="flex-1 mt-2 text-[13px] text-grayish-blue">
+          Monitors activity to identify project roadblocks
+        </p>
+        <img class="flex-none w-14 h-14 self-end" src="images/icon-supervisor.svg" alt=""/>
+      </div>
     </div>
-    <div class="flex flex-col w-80 h-56 p-6 border-t-4 border-t-primary-red rounded-lg shadow-2xl">
-      <h1 class="flex-none font-semibold text-lg text-very-dark-blue">Team Builder</h1>
-      <p class="flex-1 mt-2 text-[13px] text-grayish-blue">
-        Scans our talent network to create the optimal team for your project
-      </p>
-      <img class="flex-none w-14 h-14 self-end" src="images/icon-team-builder.svg" alt=""/>
+    <!-- col 2 -->
+    <div class="flex flex-col items-center space-y-6">
+      <div class="flex flex-col w-full h-56 p-6 border-t-4 border-t-primary-red rounded-lg shadow-2xl xl:w-[21rem]">
+        <h1 class="flex-none font-semibold text-lg text-very-dark-blue">Team Builder</h1>
+        <p class="flex-1 mt-2 text-[13px] text-grayish-blue">
+          Scans our talent network to create the optimal team for your project
+        </p>
+        <img class="flex-none w-14 h-14 self-end" src="images/icon-team-builder.svg" alt=""/>
+      </div>
+      <div class="flex flex-col w-full h-56 p-6 border-t-4 border-t-primary-orange rounded-lg shadow-2xl xl:w-[21rem]">
+        <h1 class="flex-none font-semibold text-lg text-very-dark-blue">Karma</h1>
+        <p class="flex-1 mt-2 text-[13px] text-grayish-blue">
+          Regularly evaluates our talent to ensure quality
+        </p>
+        <img class="flex-none w-14 h-14 self-end" src="images/icon-karma.svg" alt=""/>
+      </div>
     </div>
-    <div class="flex flex-col w-80 h-56 p-6 border-t-4 border-t-primary-orange rounded-lg shadow-2xl">
-      <h1 class="flex-none font-semibold text-lg text-very-dark-blue">Karma</h1>
-      <p class="flex-1 mt-2 text-[13px] text-grayish-blue">
-        Regularly evaluates our talent to ensure quality
-      </p>
-      <img class="flex-none w-14 h-14 self-end" src="images/icon-karma.svg" alt=""/>
-    </div>
-    <div class="flex flex-col w-80 h-56 p-6 border-t-4 border-t-primary-blue rounded-lg shadow-2xl">
-      <h1 class="flex-none font-semibold text-lg text-very-dark-blue">Calculator</h1>
-      <p class="flex-1 mt-2 text-[13px] text-grayish-blue">
-        Uses data from past projects to provide better delivery estimates
-      </p>
-      <img class="flex-none w-14 h-14 self-end" src="images/icon-calculator.svg" alt=""/>
+    <!-- col 3 -->
+    <div class="flex items-center">
+      <div class="flex flex-col w-full h-56 p-6 border-t-4 border-t-primary-blue rounded-lg shadow-2xl xl:w-[21rem]">
+        <h1 class="flex-none font-semibold text-lg text-very-dark-blue">Calculator</h1>
+        <p class="flex-1 mt-2 text-[13px] text-grayish-blue">
+          Uses data from past projects to provide better delivery estimates
+        </p>
+        <img class="flex-none w-14 h-14 self-end" src="images/icon-calculator.svg" alt=""/>
+      </div>
     </div>
   </div>
 </div>
