@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: ["./index.html"],
   theme: {
-    fontFamily: {
-      'sans': ['Poppins', 'sans-serif'],
-    },
     extend: {
+      fontFamily: {
+        'sans': ['Poppins', 'sans-serif'],
+      },
       colors: {
         // primary
         'primary-red': 'hsl(0, 78%, 62%)',
